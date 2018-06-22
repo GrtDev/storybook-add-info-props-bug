@@ -1,0 +1,48 @@
+{
+  "version": "0.1.0",
+  "description": "test repo",
+  "repository": "git@github.com:GrtDev/storybook-add-info-props-bug.git",
+  "author": "GrtDev <hello@grtdev.com> (https://github.com/GrtDev)",
+  "private": true,
+  "engines": {
+    "node": ">=9.3.0",
+    "yarn": ">=1.3.2"
+  },
+  "devDependencies": {
+    "@storybook/addon-actions": "4.0.0-alpha.4",
+    "@storybook/addon-info": "^3.4.4",
+    "@storybook/react": "4.0.0-alpha.4",
+    "@types/lorem-ipsum": "^1.0.2",
+    "@types/react": "^16.3.14",
+    "@types/react-dom": "^16.0.5",
+    "@types/storybook__addon-info": "^3.2.3",
+    "@types/storybook__react": "3.0.7",
+    "@types/webpack": "^4.4.0",
+    "react-docgen-typescript-loader": "^2.1.1"
+  },
+  "dependencies": {
+    "@babel/core": "^7.0.0-beta.51",
+    "@babel/polyfill": "^7.0.0-beta.51",
+    "@babel/preset-env": "^7.0.0-beta.51",
+    "@babel/preset-react": "^7.0.0-beta.51",
+    "@babel/preset-stage-3": "^7.0.0-beta.51",
+    "@babel/preset-typescript": "^7.0.0-beta.51",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.0.0-beta",
+    "del-cli": "^1.1.0",
+    "fork-ts-checker-webpack-plugin": "^0.4.2",
+    "loadable-components": "^2.2.2",
+    "lorem-ipsum": "^1.0.4",
+    "react": "16.3.2",
+    "react-dom": "16.3.2",
+    "react-hot-loader": "^4.3.3",
+    "typescript": "2.9.2",
+    "webpack": "^4.12.0",
+    "webpack-cli": "^3.0.8"
+  },
+  "scripts": {
+    "prebuild": "del dist/",
+    "build": "webpack --config webpack.config.js",
+    "storybook": "start-storybook -p 9001 -c .storybook"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "jsx": "preserve",
+    "target": "ES2015",
+    "lib": ["es2017", "dom"],
+
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "esModuleInterop": true,
+    "sourceMap": true,
+    "pretty": true,
+
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitReturns": true,
+    "noEmitOnError": true
+  },
+
+  "exclude": ["node_modules"],
+
+  "include": ["src/**/*"],
+
+  "files": ["src/index.tsx"]
+}
