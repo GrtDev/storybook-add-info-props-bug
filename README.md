@@ -1,0 +1,1 @@
+https://github.com/storybooks/storybook/issues/3758
